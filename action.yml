@@ -1,0 +1,24 @@
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+name: 'Setup containerd'
+description: 'GitHub Action to set up containerd'
+author: 'step-security'
+branding:
+  color: 'gray-dark'
+  icon: 'box'
+
+inputs:
+  containerd-version:
+    description: 'containerd version (e.g., v1.4.1)'
+    default: 'latest'
+    required: false
+  config:
+    description: 'Containerd config file'
+    required: false
+  config-inline:
+    description: 'Inline Containerd config'
+    required: false
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  post: 'dist/index.js'
