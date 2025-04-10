@@ -17,3 +17,8 @@ updates:
     labels:
       - "kind/dependencies"
       - "bot"
+
+  - package-ecosystem: docker
+    directory: /test
+    schedule:
+      interval: daily
