@@ -1,0 +1,136 @@
+name: ci
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
+permissions:
+  contents: read
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  push:
+    branches:
+      - 'master'
+      - 'releases/v*'
+    tags:
+      - 'v*'
+  pull_request:
+    paths-ignore:
+      - '.github/containerd-releases.json'
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        containerd-version:
+          - latest
+          - v1.4.1
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Set up containerd
+        uses: ./
+        with:
+          containerd-version: ${{ matrix.containerd-version }}
+
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Set up containerd
+        uses: ./
+      -
+        name: Pull image
+        run: |
+          sudo ctr i pull --all-platforms --all-metadata docker.io/library/alpine:latest
+
+  build-push:
+    runs-on: ubuntu-latest
+    services:
+      registry:
+        image: registry:2
+        ports:
+          - 5000:5000
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      -
+        name: Set up containerd
+        uses: ./
+      -
+        name: List containerd plugins
+        run: |
+          sudo ctr plugins list --detailed
+      -
+        name: Build Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./test
+          file: ./test/Dockerfile
+          platforms: linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x
+          tags: localhost:5000/name/app:latest
+          outputs: type=oci,dest=/tmp/image.tar
+      -
+        name: Import image in containerd
+        run: |
+          sudo ctr --debug i import --base-name localhost:5000/name/app --digests --all-platforms /tmp/image.tar
+      -
+        name: List containerd images
+        run: |
+          sudo ctr image ls
+      -
+        name: Push image with containerd
+        run: |
+          sudo ctr --debug i push --skip-verify --plain-http localhost:5000/name/app:latest
+
+  config:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Create config
+        run: |
+          cat > /tmp/containerd.toml <<EOL
+          version = 2
+          [grpc]
+            address = "/run/containerd/containerd.sock"
+          EOL
+      -
+        name: Set up containerd
+        uses: ./
+        with:
+          config: /tmp/containerd.toml
+
+  config-inline:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Set up containerd
+        uses: ./
+        with:
+          config-inline: |
+            version = 2
+            [grpc]
+              address = "/run/containerd/containerd.sock"
