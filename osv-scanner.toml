@@ -1,0 +1,3 @@
+[[IgnoredVulns]]
+id = "GHSA-2p57-rm9w-gvfp"
+reason = "Vulnerable function is not used, Also no fix is available yet."
