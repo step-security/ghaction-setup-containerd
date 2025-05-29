@@ -56,6 +56,10 @@ jobs:
         name: Commit changes
         run: |
           git add -A .
+  
+      - name: Show current git config
+        run: git config --list
+
       -
         name: Create PR
         uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f
