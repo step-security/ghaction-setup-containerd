@@ -62,10 +62,11 @@ jobs:
         with:
           base: main
           branch: bot/containerd-releases-json
-          commit-message: "update .github/containerd-releases.json"
+          commit-message: "chore: update .github/containerd-releases.json"
           signoff: true
           delete-branch: true
-          title: "Update `.github/containerd-releases.json`"
+          title: "chore: update `.github/containerd-releases.json`"
           body: |
             Update `.github/containerd-releases.json` to keep in sync with [https://github.com/containerd/containerd](https://github.com/containerd/containerd).
           draft: false
+          sign-commits: true
