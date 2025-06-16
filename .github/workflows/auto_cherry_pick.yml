@@ -1,0 +1,38 @@
+name: Auto Cherry-Pick from Upstream
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_branch:
+        description: "Base branch to create the PR against"
+        required: true
+        default: "main"
+      package_manager:
+        description: "Specify package manager (npm or yarn)"
+        required: false
+        default: "yarn"
+      script:
+        description: "Specify a script to run after audit fix"
+        required: false
+        default: "yarn build"
+      yarn_version:
+        required: false
+        type: string
+        default: "3.6.3"
+
+permissions:
+  contents: write
+  pull-requests: write
+  packages: read
+  issues: write
+
+jobs:
+  cherry-pick:
+    uses: step-security/reusable-workflows/.github/workflows/auto_cherry_pick.yaml@v1
+    with:
+      original-owner: "crazy-max"
+      repo-name: "ghaction-setup-containerd"
+      base_branch: ${{ inputs.base_branch }}
+      package_manager: "yarn"
+      script: ${{ inputs.script || 'yarn build' }}
+      yarn_version: ${{ inputs.script || '3.6.3' }}
