@@ -29,6 +29,66 @@
       "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-s390x.tar.gz.sha256sum"
     ]
   },
+  "edge": {
+    "id": 248374480,
+    "tag_name": "v2.2.0-beta.0",
+    "html_url": "https://github.com/containerd/containerd/releases/tag/v2.2.0-beta.0",
+    "assets": [
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-attestation.intoto.jsonl",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-amd64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-amd64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-arm64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-arm64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-ppc64le.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-ppc64le.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-riscv64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-riscv64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-s390x.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-s390x.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-windows-amd64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-windows-amd64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-amd64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-amd64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-arm64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-arm64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-ppc64le.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-ppc64le.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-riscv64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-riscv64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-s390x.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-s390x.tar.gz.sha256sum"
+    ]
+  },
+  "v2.2.0-beta.0": {
+    "id": 248374480,
+    "tag_name": "v2.2.0-beta.0",
+    "html_url": "https://github.com/containerd/containerd/releases/tag/v2.2.0-beta.0",
+    "assets": [
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-attestation.intoto.jsonl",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-amd64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-amd64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-arm64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-arm64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-ppc64le.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-ppc64le.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-riscv64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-riscv64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-s390x.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-linux-s390x.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-windows-amd64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-2.2.0-beta.0-windows-amd64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-amd64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-amd64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-arm64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-arm64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-ppc64le.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-ppc64le.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-riscv64.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-riscv64.tar.gz.sha256sum",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-s390x.tar.gz",
+      "https://github.com/containerd/containerd/releases/download/v2.2.0-beta.0/containerd-static-2.2.0-beta.0-linux-s390x.tar.gz.sha256sum"
+    ]
+  },
   "v2.1.4": {
     "id": 236374959,
     "tag_name": "v2.1.4",
@@ -297,36 +357,6 @@
       "https://github.com/containerd/containerd/releases/download/v2.1.0/containerd-static-2.1.0-linux-riscv64.tar.gz.sha256sum",
       "https://github.com/containerd/containerd/releases/download/v2.1.0/containerd-static-2.1.0-linux-s390x.tar.gz",
       "https://github.com/containerd/containerd/releases/download/v2.1.0/containerd-static-2.1.0-linux-s390x.tar.gz.sha256sum"
-    ]
-  },
-  "edge": {
-    "id": 236374959,
-    "tag_name": "v2.1.4",
-    "html_url": "https://github.com/containerd/containerd/releases/tag/v2.1.4",
-    "assets": [
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-attestation.intoto.jsonl",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-amd64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-amd64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-arm64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-arm64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-ppc64le.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-ppc64le.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-riscv64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-riscv64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-s390x.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-linux-s390x.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-windows-amd64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-2.1.4-windows-amd64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-amd64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-amd64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-arm64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-arm64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-ppc64le.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-ppc64le.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-riscv64.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-riscv64.tar.gz.sha256sum",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-s390x.tar.gz",
-      "https://github.com/containerd/containerd/releases/download/v2.1.4/containerd-static-2.1.4-linux-s390x.tar.gz.sha256sum"
     ]
   },
   "v2.1.0-rc.1": {
