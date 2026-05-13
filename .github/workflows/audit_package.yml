@@ -29,7 +29,7 @@ on:
 
 jobs:
   audit-fix:
-    uses: step-security/reusable-workflows/.github/workflows/audit_fix.yml@94ff951a90c75f14bb14f707c92a87a08a232662
+    uses: step-security/reusable-workflows/.github/workflows/audit_fix.yml@v1
     with:
       base_branch: ${{ inputs.base_branch || 'main' }}
       package_manager: "yarn"
