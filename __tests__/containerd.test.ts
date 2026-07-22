@@ -1,5 +1,12 @@
-import {describe, expect, it} from '@jest/globals';
+import {describe, expect, it, jest} from '@jest/globals';
 import * as fs from 'fs';
+
+jest.mock('os', () => ({
+  ...jest.requireActual<typeof import('os')>('os'),
+  arch: jest.fn().mockReturnValue('x64'),
+  platform: jest.fn().mockReturnValue('linux')
+}));
+
 import * as containerd from '../src/containerd';
 
 describe('getRelease', () => {
