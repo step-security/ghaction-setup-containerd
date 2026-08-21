@@ -1482,15 +1482,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.15.2":
-  version: 1.18.1
-  resolution: "axios@npm:1.18.1"
+"axios@npm:^1.19.0":
+  version: 1.19.0
+  resolution: "axios@npm:1.19.0"
   dependencies:
     follow-redirects: ^1.16.0
-    form-data: ^4.0.5
+    form-data: ^4.0.6
     https-proxy-agent: ^5.0.1
     proxy-from-env: ^2.1.0
-  checksum: e7a0c1f73f3d17ef5c5b09259b6aae0c1d841fe3b4ef76964ac5aca97b1cf30724cdedb9a514ccc435682dc690f4486580c5babfe897fbcbd500627bd2e86f6d
+  checksum: 37ef6b3049548a384dff61ef4705011458b51bcd9fd2492b844c3a5f9210cc584c7fa855aaa86a807c4c02f0df17828eba209f461aded8748539e4d87c2fa080
   languageName: node
   linkType: hard
 
@@ -1610,12 +1610,12 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^1.1.7":
-  version: 1.1.16
-  resolution: "brace-expansion@npm:1.1.16"
+  version: 1.1.18
+  resolution: "brace-expansion@npm:1.1.18"
   dependencies:
     balanced-match: ^1.0.0
     concat-map: 0.0.1
-  checksum: 11ab2d5b39d61bc0d0de9240a5d08a5f210a5650885ca4876271ef5996b4c5d172d697b501d673fe099ab721aa8bf0348507ad23a6148e169856209d2f9cab94
+  checksum: aa84023a4118f9185b6f8c71ca3467c945878b141ba340261de209676442f81b08db5b7c7c119707cdecb7322fcfcdb71d8ffea55db9d1aad673d7c65469211f
   languageName: node
   linkType: hard
 
@@ -2545,7 +2545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:^4.0.5":
+"form-data@npm:^4.0.6":
   version: 4.0.6
   resolution: "form-data@npm:4.0.6"
   dependencies:
@@ -2928,9 +2928,9 @@ __metadata:
   linkType: hard
 
 "ip-address@npm:^10.0.1":
-  version: 10.2.1
-  resolution: "ip-address@npm:10.2.1"
-  checksum: 35cbf931da2271508b3004e4a5d1ff4a7dd2ca8f7c8cc1d52932d00a189744a0be3268bd9d2cdd174bc4721bf0948403a6630bb3443f7b84fefaba21495bbc4b
+  version: 10.5.0
+  resolution: "ip-address@npm:10.5.0"
+  checksum: ffb64aea3ab0bf975b237954f89bf3c37cb5fc9d078cf5868408e54d29636d14618ed67dafcde664b3cdfc778ee78c811286cf67e59d1243a0c198d05aa47683
   languageName: node
   linkType: hard
 
@@ -3585,13 +3585,13 @@ __metadata:
   linkType: hard
 
 "js-yaml@npm:^4.1.0":
-  version: 4.3.0
-  resolution: "js-yaml@npm:4.3.0"
+  version: 4.3.1
+  resolution: "js-yaml@npm:4.3.1"
   dependencies:
     argparse: ^2.0.1
   bin:
     js-yaml: bin/js-yaml.js
-  checksum: 1268fb22ae8504646cedc0823c18816d4af056029578e855b9a4d3e19bcafc3e9ba9e391f70dea4a29b023bb09f23639766071199cb89e853266b90a6ec25f9a
+  checksum: 482740e69a1769b355d7182234c0fa197237f02e6a5c8c0b70a763af6a712c9741de350d784a5659e00cf03cedd6ebfa506d59ca45967e3ee50dd4f4df18f2e7
   languageName: node
   linkType: hard
 
@@ -4505,7 +4505,7 @@ __metadata:
     "@typescript-eslint/parser": ^6.6.0
     "@vercel/ncc": ^0.38.4
     async-retry: ^1.3.3
-    axios: ^1.15.2
+    axios: ^1.19.0
     dotenv: ^16.3.1
     eslint: ^8.49.0
     eslint-config-prettier: ^9.0.0
