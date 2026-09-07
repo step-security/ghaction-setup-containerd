@@ -72,17 +72,8 @@ jobs:
               if (release.draft) {
                 continue;
               }
-              if (!res['edge'] && release.prerelease) {
-                if (semver.gt(release.tag_name, res['latest'].tag_name)) {
-                  res['edge'] = {
-                    id: release.id,
-                    tag_name: release.tag_name,
-                    html_url: release.html_url,
-                    assets: release.assets.map(asset => asset.browser_download_url).sort(),
-                  };
-                } else {
-                  res['edge'] = res['latest'];
-                }
+              if (release.prerelease) {
+                continue;
               }
               if (pinLatest && release.tag_name === pinLatest) {
                 res['latest'] = {
