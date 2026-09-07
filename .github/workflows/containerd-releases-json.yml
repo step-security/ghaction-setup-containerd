@@ -14,7 +14,7 @@ on:
     - cron: '0 */12 * * *'
   push:
     branches:
-      - 'master'
+      - 'main'
   pull_request:
     paths-ignore:
       - '.github/containerd-releases.json'
