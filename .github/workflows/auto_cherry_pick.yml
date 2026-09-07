@@ -19,6 +19,10 @@ on:
         required: false
         type: string
         default: "3.6.3"
+      node_version:
+        description: "Specify Node.js version (e.g., '18', '20', 'lts/*')"
+        required: false
+        default: "24"
 
 permissions:
   contents: write
@@ -36,3 +40,4 @@ jobs:
       package_manager: "yarn"
       script: ${{ inputs.script || 'yarn build' }}
       yarn_version: ${{ inputs.script || '3.6.3' }}
+      node_version: "${{ inputs.node_version || '24' }}"

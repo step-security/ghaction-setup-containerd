@@ -113,7 +113,7 @@ jobs:
       -
         name: Push image with containerd
         run: |
-          sudo ctr --debug i push --skip-verify --plain-http localhost:5000/name/app:latest
+          sudo ctr --debug i push --local --skip-verify --plain-http localhost:5000/name/app:latest
 
   config:
     runs-on: ubuntu-latest

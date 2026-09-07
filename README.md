@@ -1,3 +1,5 @@
+[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
+
 [![GitHub release](https://img.shields.io/github/release/step-security/ghaction-setup-containerd.svg?style=flat-square)](https://github.com/step-security/ghaction-setup-containerd/releases/latest)
 
 ## About
