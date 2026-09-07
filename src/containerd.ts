@@ -25,7 +25,7 @@ export interface GitHubRelease {
 }
 
 export const getRelease = async (version: string): Promise<GitHubRelease> => {
-  const url = `https://raw.githubusercontent.com/step-security/ghaction-setup-containerd/release/.github/containerd-releases.json`;
+  const url = `https://raw.githubusercontent.com/step-security/ghaction-setup-containerd/main/.github/containerd-releases.json`;
   const http: httpm.HttpClient = new httpm.HttpClient('ghaction-setup-containerd');
   const resp: httpm.HttpClientResponse = await http.get(url);
   const body = await resp.readBody();
